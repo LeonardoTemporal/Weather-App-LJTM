@@ -1,4 +1,7 @@
 body {
+  background-image: url('https://www.lastunas.gob.cu/images/meteorologia/meteorologia.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #333;
 }
 
@@ -112,6 +115,11 @@ body {
   cursor: pointer;
   margin-top: 400px;
   margin-right: 250px;
+}
+
+.get-btn:hover {
+  background-color: #333;
+  color: aliceblue;
 }
 
 

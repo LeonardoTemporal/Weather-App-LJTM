@@ -97,7 +97,7 @@ function App() {
         :
         
         <>
-        <video className='video-bg' src={tierra} autoPlay loop muted></video>
+        
       <div className='cityDate'>
         <h1>{weather?.name}, {weather?.sys.country}</h1>
         <div className='card__container'>
