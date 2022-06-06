@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios'
 import ClipLoader from "react-spinners/PacmanLoader"
-import tierra from '../../clase2.4/src/video/tierra2.mp4'
+
 
 
 function App() {
