@@ -108,7 +108,7 @@ function App() {
           <h2>Temperature:  {
               isBoolean
               ? (weather?.main.temp - 273.15).toFixed(1) 
-              : weather?.main.temp
+              : ((weather?.main.temp - 273.15).toFixed(1) * 1.8 + 32)
             } {
              isBoolean
               ? '°C' 
