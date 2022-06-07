@@ -111,10 +111,12 @@ body {
 
 .get-btn {
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
   margin-top: 400px;
   margin-right: 250px;
+  width: 100px;
+  height: 25px;
 }
 
 .get-btn:hover {
@@ -182,6 +184,33 @@ body {
   .weatherApp {
     font-size: 15px;
    }
+}
+
+@media (max-width: 423px) {
+  .cityDate{
+    width: 70%;
+    
+  }
+  
+  .cityDate h1 {
+    font-size: 20px;
+  }
+
+  .cityDate__card {
+    font-size: 10px;
+  }
+
+  .wIcon {
+    height: 32%;
+   width: 35%;
+   margin-left: 34%;
+  }
+
+  .weatherApp{
+    width: 70%;
+    font-size: 12px;
+  }
+
 }
 
 

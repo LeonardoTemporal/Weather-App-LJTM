@@ -10,7 +10,7 @@ function App() {
   const [weather, setweather] = useState()
   const [date, setdate] = useState()
   const [isBoolean, setIsBoolean] = useState(true)
-  const [loading, setloading] = useState(false)
+  const [loading, setloading] = useState(true)
 
 
   let long, lat
@@ -39,7 +39,10 @@ function App() {
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${obj?.lat}&lon=${obj?.long}&appid=${API_KEY}`
 
       axios.get(url)
-        .then(res => setweather(res.data))
+        .then(res => {
+          setweather(res.data)
+          setloading(false)
+        })
         .catch(err => console.log(err))
     }
   }, [obj])
@@ -72,14 +75,7 @@ function App() {
  
  const urlIcon = `http://openweathermap.org/img/wn/${weather?.weather[0].icon}@2x.png`
 
- useEffect(() => {
-   setloading(true)
-   setTimeout(() => {
-     setloading(false)
-   }, 6000)
  
-   
- }, [])
 
 
   return (
